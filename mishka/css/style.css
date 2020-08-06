@@ -584,8 +584,13 @@ button {
   display: none;
 }
 
+br {
+  display: none;
+}
+
 .features {
   padding: 21px 30px 0;
+  position: relative;
 }
 
 .features__title {
@@ -791,6 +796,74 @@ td:first-child {
     min-width: 100%;
     height: auto;
   }
+
+  br {
+    display: block;
+  }
+
+  .features {
+    padding: 48px 48px 0;
+  }
+
+  .features a {
+    display: block;
+    width: 43%;
+    margin-top: 20px;
+  }
+
+  .features__title {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .features__title h2 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .features__title p {
+    line-height: 17px;
+    margin-top: 10px;
+    margin-bottom: 43px;
+    margin-right: 23px;
+  }
+
+  .features__description {
+    width: 44%;
+    margin-bottom: 41px;
+  }
+
+  .features__description p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .features__table {
+    width: 39%;
+  }
+
+  .features img {
+    position: absolute;
+    width: 329px;
+    height: auto;
+    right: 52px;
+    top: 29%;
+    z-index: -1;
+  }
+
+  .features__order {
+    width: 50%;
+  }
+
+  .features__order .features__price,
+  .features__order .features__price-value {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -842,6 +915,51 @@ td:first-child {
 
   .content__extra-wrap {
     padding: 0 100px;
+  }
+
+  .features a {
+    display: block;
+    width: 32%;
+  }
+
+  .features__description-wrap {
+    margin-left: 20%;
+  }
+
+  .features__title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 76px;
+  }
+
+  .features__title h2 {
+    font-size: 53px;
+    line-height: 57px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .features__title p {
+    line-height: 17px;
+    margin-top: 10px;
+    margin-bottom: 43px;
+    margin-right: 23px;
+  }
+
+  .features__description {
+    width: 25%;
+  }
+
+  .features img {
+    right: 99px;
+    top: 11%;
+    width: 42%;
+  }
+
+  .features__order {
+    width: 31%;
   }
 }
 
