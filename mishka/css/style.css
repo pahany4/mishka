@@ -684,6 +684,42 @@ td:first-child {
           box-sizing: border-box;
 }
 
+.zigzag {
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+  height: auto;
+}
+
+.about {
+  padding: 0 30px;
+}
+
+.about__list {
+  padding: 0;
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about__list .about__item {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.about__list p {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .page-header nav {
     -webkit-box-orient: horizontal;
@@ -864,6 +900,37 @@ td:first-child {
   .features__order .features__price-value {
     font-size: 20px;
   }
+
+  .zigzag {
+    margin: 50px 0;
+  }
+
+  .about {
+    padding: 0 50px;
+  }
+
+  .about h2 {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 42px;
+  }
+
+  .about__list .about__item {
+    width: calc(100% / 4 * 2);
+    margin-bottom: 30px;
+  }
+
+  .about__list p {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -954,17 +1021,40 @@ td:first-child {
 
   .features img {
     right: 99px;
-    top: 11%;
-    width: 42%;
+    top: 8%;
+    width: 525px;
   }
 
   .features__order {
     width: 31%;
+  }
+
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 100px;
+  }
+
+  .about h2 {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about .about-wrap {
+    width: calc(100% / 6 * 4);
   }
 }
 
 @media (min-width: 1600px) {
   .content .content__extra {
     padding: 2.5vw 30px;
+  }
+
+  .zigzag {
+    margin: 100px 0;
   }
 }
