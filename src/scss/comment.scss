@@ -1,0 +1,40 @@
+.comment {
+    padding: 0 30px;
+
+    @media (min-width: 768px) {
+        padding: 0 50px;
+    }
+
+    @media (min-width: 1150px) {
+        padding: 0 100px;
+    }
+
+    .btn {
+        margin-top: 34px;
+    }
+}
+
+.comment__cite {
+    font-size: 15px;
+    line-height: 30px;
+    font-style: normal;
+}
+
+.comment__autor {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: 29px;
+}
+
+.comment__arrow {
+    display: flex;
+    margin-top: 30px;
+
+
+    button {
+        padding: 10px 0;
+        width: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.171);
+    }
+}
