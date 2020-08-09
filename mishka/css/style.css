@@ -968,6 +968,53 @@ td:first-child {
 
   .comment {
     padding: 0 50px;
+    background-image: url("../img/review.jpg");
+    background-repeat: no-repeat;
+    padding: 10px 50px 30px;
+  }
+
+  .comment .btn {
+    position: absolute;
+    width: calc(100% / 6 * 1.57);
+    right: 0;
+    top: -31px;
+    z-index: 5;
+  }
+
+  .comment .comment-wrap {
+    position: relative;
+  }
+
+  .comment-wrap h2 {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 67px;
+    margin-bottom: 50px;
+  }
+
+  .comment-wrap h2 {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .comment__cite {
+    font-size: 17px;
+  }
+
+  .comment__autor {
+    font-size: 18px;
+    margin-top: 56px;
+  }
+
+  .comment__arrow {
+    position: absolute;
+    width: 26%;
+    right: 0;
+    bottom: 3px;
+  }
+
+  .comment__arrow button {
+    border: none;
   }
 }
 
@@ -1087,7 +1134,35 @@ td:first-child {
   }
 
   .comment {
-    padding: 0 100px;
+    padding: 10px 100px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+
+  .comment .btn {
+    width: 20%;
+    top: 34px;
+  }
+
+  .comment .comment-wrap {
+    width: calc(100% / 6 * 5);
+  }
+
+  .comment-wrap h2 {
+    margin-top: 62px;
+  }
+
+  .comment__autor {
+    margin-top: 36px;
+  }
+
+  .comment__arrow {
+    width: 20%;
+    bottom: 23px;
   }
 }
 
