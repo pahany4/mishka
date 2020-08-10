@@ -754,6 +754,10 @@ td:first-child {
   border: 1px solid rgba(0, 0, 0, 0.171);
 }
 
+.contacts {
+  margin-bottom: 30px;
+}
+
 .contacts-wrap {
   margin: 49px 30px 0;
 }
@@ -801,6 +805,63 @@ iframe {
   display: block;
   margin: auto;
   width: 80%;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 30px;
+}
+
+footer div {
+  margin-bottom: 20px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social .link_insta,
+.social .link_fb {
+  margin-right: 20px;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.develop__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.develop__value::after {
+  display: block;
+  width: 27px;
+  height: 34px;
+  margin-left: 15px;
+  display: block;
+  content: "";
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
