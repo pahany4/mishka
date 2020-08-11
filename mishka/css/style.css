@@ -461,12 +461,13 @@ button {
 }
 
 .page-header__logo {
+  position: relative;
   text-align: center;
   margin: 22px auto;
-  z-index: 5;
+  z-index: 2;
 }
 
-.page-header__logo:hover {
+.page-header__logo a:hover {
   opacity: .5;
 }
 
@@ -695,6 +696,95 @@ td:first-child {
   width: 100%;
   margin: 30px 0;
   height: auto;
+}
+
+.page-header__inner.open {
+  width: 100vw;
+  position: absolute;
+  background-color: #fff;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.menu-icon {
+  width: 40px;
+  height: 40px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #62d1ba), color-stop(21%, transparent), color-stop(40%, transparent), color-stop(41%, #62d1ba), color-stop(60%, #62d1ba), color-stop(61%, transparent), color-stop(80%, transparent), color-stop(81%, #62d1ba));
+  background: -o-linear-gradient(top, #62d1ba 20%, transparent 21%, transparent 40%, #62d1ba 41%, #62d1ba 60%, transparent 61%, transparent 80%, #62d1ba 81%);
+  background: linear-gradient(to bottom, #62d1ba 20%, transparent 21%, transparent 40%, #62d1ba 41%, #62d1ba 60%, transparent 61%, transparent 80%, #62d1ba 81%);
+  position: absolute;
+  right: 18px;
+  bottom: 35px;
+  z-index: 5;
+  bottom: 0;
+}
+
+.menu-icon_hid {
+  display: none;
+}
+
+.menu-hid {
+  margin-top: -315px;
+}
+
+.menu-close {
+  -webkit-animation-name: menu-close;
+          animation-name: menu-close;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes menu-close {
+  0% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -315px;
+  }
+}
+
+@keyframes menu-close {
+  0% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: -315px;
+  }
+}
+
+.menu-icon_activ {
+  background: -o-linear-gradient(45deg, transparent 45%, #62d1ba 46%, #62d1ba 55%, transparent 56%), -o-linear-gradient(135deg, transparent 45%, #62d1ba 46%, #62d1ba 55%, transparent 56%);
+  background: linear-gradient(45deg, transparent 45%, #62d1ba 46%, #62d1ba 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, #62d1ba 46%, #62d1ba 55%, transparent 56%);
+  border: none;
+}
+
+.menu-open {
+  -webkit-animation-name: menu-open;
+          animation-name: menu-open;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes menu-open {
+  0% {
+    margin-top: -315px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+@keyframes menu-open {
+  0% {
+    margin-top: -315px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
 }
 
 .about {
