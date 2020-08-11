@@ -42,3 +42,9 @@ button {
 .wrapper {
     margin: auto;
 }
+
+.btn:hover,
+.btn:focus {
+    background-color: #444;
+    color: #fff;
+}

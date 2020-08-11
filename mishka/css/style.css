@@ -444,6 +444,12 @@ button {
   margin: auto;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #444;
+  color: #fff;
+}
+
 .page-header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,6 +870,10 @@ footer div {
   background-repeat: no-repeat;
 }
 
+svg:hover {
+  fill: #46c1ae;
+}
+
 @media (min-width: 768px) {
   .page-header nav {
     -webkit-box-orient: horizontal;
@@ -1154,6 +1164,16 @@ footer div {
 
   .contacts .btn {
     width: 30%;
+  }
+
+  .footer-wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
