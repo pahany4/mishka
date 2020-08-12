@@ -1,0 +1,110 @@
+@@include('_head.html')
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper">
+            @@include('_header.html')
+
+            <main>
+                <section class="delivery">
+                    <h2 class="delivery__title">Вязание на заказ</h2>
+                </section>
+                <section class="form">
+                    <h2 class="visually-hidden">
+                        Форма для заказов
+                    </h2>
+                    <form action="">
+                        <div class="form__description">
+                            <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+                                свяжемся с вами, чтобы уточнить детали.</p>
+                        </div>
+
+                        <div class="order__tipe--inner">
+                            <div class="order__title">
+                                <p>тип</p>
+                            </div>
+                            <div class="order__tipe--wrap">
+                                <input class="visually-hidden" type="radio" name="type" id="interior"
+                                    value="Аксессуар для интерьера" checked>
+                                <label class="interior" for="interior">Аксессуар для интерьера</label>
+                                <input class="visually-hidden" type="radio" name="type" id="toys"
+                                    value="Детская игрушка">
+                                <label class="toys" for="toys">Детская игрушка</label>
+                            </div>
+                        </div>
+
+                        <div class="order__color--inner">
+                            <div class="order__title">
+                                <p>Цвет</p>
+                            </div>
+                            <div class="order__color--wrap">
+                                <input class="visually-hidden check" type="checkbox" name="color" id="white" checked>
+                                <label class="order__color--label" for="white">Белый</label>
+                                <input class="visually-hidden check" type="checkbox" name="color" id="grey" checked>
+                                <label class="order__color--label" for="grey">Серый</label>
+                                <input class="visually-hidden check" type="checkbox" name="color" id="tiffany">
+                                <label class="order__color--label" for="tiffany">&laquoТиффани&raquo</label>
+                                <input class="visually-hidden check" type="checkbox" name="color" id="black">
+                                <label class="order__color--label" for="black">Черный</label>
+                                <input class="visually-hidden check" type="checkbox" name="color" id="pink">
+                                <label class="order__color--label" for="pink">Розовый</label>
+                                <input class="visually-hidden check" type="checkbox" name="color" id="orange">
+                                <label class="order__color--label" for="orange">Оранжевый</label>
+                            </div>
+                        </div>
+
+                        <div class="order__fio--inner">
+                            <div class="order__title">
+                                <p>ФИО</p>
+                            </div>
+                            <div class="order__fio--wrap">
+                                <label for="name">Имя:</label>
+                                <input type="text" name="userName" id="name" required>
+
+                                <label for="family">Фамилия:</label>
+                                <input type="text" name="userFamily" id="family" required>
+
+                                <label for="patronymic">Отчество:</label>
+                                <input type="text" name="userЗatronymic" id="patronymic">
+                            </div>
+                        </div>
+
+                        <div class="order__contacts--inner">
+                            <div class="order__title">
+                                <p class="tel">ТЕЛ</p>
+
+                            </div>
+                            <div class="order__fio--wrap">
+                                <input type="text" name="tel" id="tel" required>
+                            </div>
+                            <div class="order__title">
+
+                                <p class="email">E-MAIL</p>
+                            </div>
+                            <div class="order__fio--wrap">
+                                <input type="text" name="email" id="email" required>
+                            </div>
+                        </div>
+
+
+                        <div class="order__extra--iner">
+                            <div class="order__title">
+                                <p class="tel">ДОП</p>
+                            </div>
+                            <div class="order__extra--wrap">
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="send">
+                            <p class="required">*Поля обязательны для заполнения</p>
+                            <input class="btn" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+                        </div>
+                    </form>
+                </section>
+            </main>
+
+            @@include('_footer.html')
+
+        </div>
+        <script src="js/script.min.js"></script>
+</body>

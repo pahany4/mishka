@@ -964,6 +964,137 @@ svg:hover {
   fill: #46c1ae;
 }
 
+.delivery {
+  background-color: #f1f1f1;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.delivery__title {
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.form {
+  padding: 20px 30px;
+}
+
+.form__description p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.order__title p {
+  color: #62d1ba;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order__title p::after {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border: 1px solid #62d1ba;
+  margin-left: 30px;
+}
+
+.interior::before,
+.toys::before {
+  margin-right: 23px;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 10px;
+  background-clip: content-box;
+  padding: 10px;
+}
+
+.interior:hover::before,
+.toys:hover::before {
+  border-color: #62d1ba;
+}
+
+#interior:focus + .interior {
+  outline: 1px dashed #000;
+}
+
+#toys:focus + .toys {
+  outline: 1px dashed #000;
+}
+
+#interior:checked + .interior::before {
+  background-color: #62d1ba;
+}
+
+#toys:checked + .toys::before {
+  background-color: #62d1ba;
+}
+
+.interior,
+.toys,
+.order__color--label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  margin-bottom: 26px;
+}
+
+.order__color--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.order__color--label::before {
+  margin-right: 23px;
+  display: block;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 10px;
+  background-clip: content-box;
+  padding: 5px;
+}
+
+.check:checked + .order__color--label::before {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.check:focus + .order__color--label {
+  outline: 1px dashed #000;
+}
+
 @media (min-width: 768px) {
   .page-header nav {
     -webkit-box-orient: horizontal;
@@ -1379,7 +1510,7 @@ svg:hover {
   }
 
   .about .about-wrap {
-    width: calc(100% / 6 * 4);
+    width: 66.6666%;
   }
 
   .comment {
