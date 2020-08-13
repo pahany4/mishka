@@ -1442,6 +1442,10 @@ textarea {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+
+  .form {
+    padding: 20px 50px;
+  }
 }
 
 @media (min-width: 1150px) {
