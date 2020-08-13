@@ -1457,7 +1457,7 @@ textarea {
   }
 
   .order__title {
-    width: 25%;
+    width: 17%;
   }
 
   .order__title p {
@@ -1696,6 +1696,10 @@ textarea {
   .form__description {
     width: calc(100% / 6 * 4);
     margin: 25px auto;
+  }
+
+  .order__title p {
+    margin: 0 25%;
   }
 
   .order__color--wrap {
