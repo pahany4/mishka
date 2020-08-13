@@ -979,6 +979,10 @@ svg:hover {
   padding: 20px 30px;
 }
 
+.form__description {
+  margin-bottom: 35px;
+}
+
 .form__description p {
   margin: 0;
   font-size: 13px;
@@ -1138,7 +1142,7 @@ textarea {
   font-weight: 400;
   line-height: 18px;
   resize: vertical;
-  min-height: 70vw;
+  min-height: 30vw;
 }
 
 @media (min-width: 768px) {
@@ -1446,6 +1450,67 @@ textarea {
   .form {
     padding: 20px 50px;
   }
+
+  .form__description p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__title {
+    width: 25%;
+  }
+
+  .order__title p {
+    margin: 0;
+  }
+
+  .order__title p::after {
+    display: none;
+  }
+
+  .tipe--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .tipe--wrap {
+    width: calc(100% / 4 *3);
+  }
+
+  .order__color--wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .order__color--label {
+    width: 50%;
+  }
+
+  .send {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .send .btn {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1150px) {
@@ -1626,6 +1691,19 @@ textarea {
     position: absolute;
     bottom: 0;
     left: 50px;
+  }
+
+  .form__description {
+    width: calc(100% / 6 * 4);
+    margin: 25px auto;
+  }
+
+  .order__color--wrap {
+    width: calc(100% / 6 * 5);
+  }
+
+  .order__color--label {
+    width: calc(100% / 10 * 3);
   }
 }
 

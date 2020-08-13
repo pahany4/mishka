@@ -18,15 +18,31 @@
 }
 
 .form__description {
+    margin-bottom: 35px;
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 6 * 4);
+        margin: 25px auto;
+    }
+
     p {
         margin: 0;
         font-size: 13px;
         line-height: 24px;
+
+        @media (min-width: 768px) {
+            font-size: 17px;
+            line-height: 30px;
+        }
     }
 }
 
 // параграф
 .order__title {
+    @media (min-width: 768px) {
+        width: 25%;
+    }
+
     p {
         color: $colorElemLight;
         font-size: 17px;
@@ -36,6 +52,9 @@
         display: flex;
         align-items: center;
 
+        @media (min-width: 768px) {
+            margin: 0;
+        }
     }
 
     //риска параграфа
@@ -47,6 +66,10 @@
         height: 1px;
         border: 1px solid $colorElemLight;
         margin-left: 30px;
+
+        @media (min-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -175,5 +198,56 @@ textarea {
     font-weight: 400;
     line-height: 18px;
     resize: vertical;
-    min-height: 70vw;
+    min-height: 30vw;
+}
+
+// расположение элементов формы по сетке
+.tipe--inner {
+    @media (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.tipe--wrap {
+    @media (min-width: 768px) {
+        width: calc(100% / 4 *3);
+    }
+}
+
+.order__color--wrap {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 6 * 5);
+    }
+}
+
+.order__color--label {
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1150px) {
+        width: calc(100% / 10 * 3);
+    }
+}
+
+// кнопка отправить и надпись
+.send {
+    @media (min-width: 768px) {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .btn {
+        @media (min-width: 768px) {
+            width: 30%;
+        }
+    }
 }
