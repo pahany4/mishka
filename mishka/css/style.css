@@ -1095,6 +1095,52 @@ svg:hover {
   outline: 1px dashed #000;
 }
 
+.order__fio--wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.order__fio--wrap label {
+  margin-bottom: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+[type="text"] {
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 25px;
+  padding: 10px 0;
+}
+
+[type="text"]:focus,
+[type="text"]:hover {
+  outline: 0;
+  border-bottom: 2px solid #62d1ba;
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid #000;
+  display: block;
+  resize: none;
+  padding: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  resize: vertical;
+  min-height: 70vw;
+}
+
 @media (min-width: 768px) {
   .page-header nav {
     -webkit-box-orient: horizontal;

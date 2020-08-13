@@ -136,3 +136,44 @@
 .check:focus+.order__color--label {
     outline: 1px dashed #000;
 }
+
+//ФИО
+.order__fio--wrap {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 18px;
+        font-weight: bold;
+    }
+}
+
+[type="text"] {
+    border: none;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+    padding: 10px 0;
+}
+
+[type="text"]:focus,
+[type="text"]:hover {
+    outline: 0;
+    border-bottom: 2px solid $colorElemLight;
+}
+
+//textaria
+textarea {
+    width: 100%;
+    border: 2px solid #000;
+    display: block;
+    resize: none;
+    padding: 15px;
+    flex-grow: 1;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+    resize: vertical;
+    min-height: 70vw;
+}
