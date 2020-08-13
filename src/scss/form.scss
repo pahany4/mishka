@@ -249,6 +249,11 @@ textarea {
         justify-content: space-between;
     }
 
+    @media (min-width: 1150px) {
+        width: calc(100% / 6 * 4);
+        margin: 30px auto;
+    }
+
     .btn {
         @media (min-width: 768px) {
             width: 30%;

@@ -1709,6 +1709,11 @@ textarea {
   .order__color--label {
     width: calc(100% / 10 * 3);
   }
+
+  .send {
+    width: calc(100% / 6 * 4);
+    margin: 30px auto;
+  }
 }
 
 @media (min-width: 1600px) {
