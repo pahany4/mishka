@@ -28,6 +28,10 @@ button {
     background-color: transparent;
 }
 
+button:focus {
+    outline: 0;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
