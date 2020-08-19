@@ -734,8 +734,8 @@ td:first-child {
 .menu-close {
   -webkit-animation-name: menu-close;
           animation-name: menu-close;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
 }
 
 @-webkit-keyframes menu-close {
@@ -767,8 +767,8 @@ td:first-child {
 .menu-open {
   -webkit-animation-name: menu-open;
           animation-name: menu-open;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
 }
 
 @-webkit-keyframes menu-open {
