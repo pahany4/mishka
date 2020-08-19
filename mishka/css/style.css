@@ -450,6 +450,10 @@ button {
   color: #fff;
 }
 
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
 .page-header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1036,11 +1040,11 @@ svg:hover {
 }
 
 #interior:focus + .interior {
-  outline: 1px dashed #000;
+  border-color: #62d1ba;
 }
 
 #toys:focus + .toys {
-  outline: 1px dashed #000;
+  border-color: #62d1ba;
 }
 
 #interior:checked + .interior::before {
@@ -1095,8 +1099,8 @@ svg:hover {
   background-position: center;
 }
 
-.check:focus + .order__color--label {
-  outline: 1px dashed #000;
+.check:focus + .order__color--label::before {
+  border-color: #62d1ba;
 }
 
 .order__fio--wrap {
@@ -1426,7 +1430,7 @@ textarea {
 
   address .contacts__email,
   address .contacts__address {
-    width: 50%;
+    width: 60%;
   }
 
   address a {
@@ -1514,6 +1518,10 @@ textarea {
 }
 
 @media (min-width: 1150px) {
+  .wrapper {
+    width: 1300px;
+  }
+
   .page-header__logo {
     left: calc(50% - 75px);
     top: -13px;

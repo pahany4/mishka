@@ -101,11 +101,11 @@
 
 // фокус элементов
 #interior:focus+.interior {
-    outline: 1px dashed #000;
+    border-color: $colorElemLight;
 }
 
 #toys:focus+.toys {
-    outline: 1px dashed #000;
+    border-color: $colorElemLight;
 }
 
 //чекед радио-инпутов
@@ -160,8 +160,8 @@
 }
 
 // фокус элементов чек
-.check:focus+.order__color--label {
-    outline: 1px dashed #000;
+.check:focus+.order__color--label::before {
+    border-color: $colorElemLight;
 }
 
 //ФИО

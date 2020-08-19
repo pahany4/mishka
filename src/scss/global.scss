@@ -41,10 +41,19 @@ button {
 
 .wrapper {
     margin: auto;
+
+    @media (min-width:1150px) {
+        width: 1300px;
+    }
 }
 
 .btn:hover,
 .btn:focus {
     background-color: #444;
     color: #fff;
+}
+
+// focus-visible
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: none;
 }

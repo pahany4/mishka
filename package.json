@@ -36,6 +36,7 @@
     "ttf2woff2": "^3.0.0"
   },
   "dependencies": {
+    "focus-visible": "^5.1.0",
     "svgxuse": "^1.2.6"
   }
 }
